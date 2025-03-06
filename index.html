@@ -63,22 +63,22 @@
                         <img src="assets/board.png" alt="" class=" rounded-lg">
                     </div>
                     <div>
-                        <h3 class="text-white text-2xl mt-2">Discover Something New Today!</h3>
+                        <h3 class="text-white text-2xl mt-2 cursor-pointer">Discover Something New Today!</h3>
                     </div>
                 </div>
 
                 <!-- Today's Date -->
 
-                <div
-                    class="bg-[#F3F6FF] rounded-lg flex justify-center gap-5 h-[128px] w-[260px] py-4 px-4 items-center">
+                <div class="bg-[#F3F6FF] rounded-lg flex justify-center gap-5 h-[128px] w-[260px] py-4 px-4 items-center">
                     <div class="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md">
-                        <img src="assets/calender.png" alt="Check" class="h-6">
+                        <img src="assets/calender.png" alt="Calendar" class="h-6">
                     </div>
                     <div>
-                        <span class="text-gray-600 text-sm">Wed</span>
-                        <h2 class="text-2xl font-bold text-[#1D3557]">Jul 28 2025</h2>
+                        <span class="text-gray-600 text-lg" id="currentDay"></span>
+                        <h2 class="text-xl font-bold text-[#1D3557]" id="currentDate"></h2>
                     </div>
                 </div>
+                
 
             </div>
 
@@ -97,7 +97,7 @@
                             <span class="text-sm text-gray-600">Deadline</span>
                             <span class="text-sm font-semibold">21 March 2025</span>
                         </div>
-                        <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg btn-task">Completed</button>
+                        <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg btn-task cursor-pointer">Completed</button>
                     </div>
                 </div>
 
@@ -113,7 +113,7 @@
                             <span class="text-sm text-gray-600">Deadline</span>
                             <span class="text-sm font-semibold">21 March 2025</span>
                         </div>
-                        <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg btn-task">Completed</button>
+                        <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg btn-task cursor-pointer">Completed</button>
                     </div>
                 </div>
 
@@ -129,7 +129,7 @@
                             <span class="text-sm text-gray-600">Deadline</span>
                             <span class="text-sm font-semibold">21 March 2025</span>
                         </div>
-                        <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg btn-task">Completed</button>
+                        <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg btn-task cursor-pointer">Completed</button>
                     </div>
                 </div>
 
@@ -145,7 +145,7 @@
                             <span class="text-sm text-gray-600">Deadline</span>
                             <span class="text-sm font-semibold">21 March 2025</span>
                         </div>
-                        <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg btn-task">Completed</button>
+                        <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg btn-task cursor-pointer">Completed</button>
                     </div>
                 </div>
 
@@ -162,7 +162,7 @@
                             <span class="text-sm text-gray-600">Deadline</span>
                             <span class="text-sm font-semibold">21 March 2025</span>
                         </div>
-                        <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg btn-task">Completed</button>
+                        <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg btn-task cursor-pointer">Completed</button>
                     </div>
                 </div>
 
@@ -179,7 +179,7 @@
                             <span class="text-sm text-gray-600">Deadline</span>
                             <span class="text-sm font-semibold">21 March 2025</span>
                         </div>
-                        <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg btn-task">Completed</button>
+                        <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg btn-task cursor-pointer">Completed</button>
                     </div>
                 </div>
 
@@ -194,17 +194,12 @@
                     <img src="assets/activity.png" alt="">
                     <h2 class="text-lg font-semibold">Activity Log</h2>
                 </div>
-                <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg mt-4">Clear History</button>
+                <button id="activityLogClear" class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg mt-4 cursor-pointer">Clear History</button>
             </div>
 
             <!-- Activity Log History -->
-            <div class="mt-4 flex flex-col">
-                <div class="bg-[#F3F6FF] p-4 rounded-lg mb-4">
-                    <h4 class="text-gray-600">You have completed the task "Add Dark Mode" at 12:48:15 PM</h4>
-                </div>
-                <div class="bg-[#F3F6FF] p-4 rounded-lg mb-4">
-                    <h4 class="text-gray-600">You have completed the task "Optimize Homepage" at 12:48:15 PM</h4>
-                </div>
+            <div class="mt-4 flex flex-col activityLog">
+
             </div>
 
         </section>
@@ -214,6 +209,9 @@
     <!-- Javascript -->
 
     <script src="./script/taskAssigned.js"></script>
+    <script src="./script/clearActivityLog.js"></script>
+    <script src="./script/currentDate.js"></script>
+
 
 </body>
 
