@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let now = new Date();
 
         // Array of weekday names
-        let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
         let dayName = days[now.getDay()];
 
         // Get the formatted date

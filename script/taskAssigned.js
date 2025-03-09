@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (taskAssignedCounter && totalTasksAssignedCounter && activityLogContainer && completedButtons.length > 0) {
         completedButtons.forEach(button => {
             button.addEventListener("click", function () {
+                
                 // Get current counts, increment/decrement, and update UI
                 let currentCount = parseInt(taskAssignedCounter.textContent.trim(), 10);
                 let totalCount = parseInt(totalTasksAssignedCounter.textContent.trim(), 10);
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Get task name from the button's parent container
                 let taskName = button.closest(".p-6").querySelector("h2").textContent.trim();
                 
-                // Get current time
+                // Current time
                 let now = new Date();
                 let hours = now.getHours();
                 let minutes = now.getMinutes();
@@ -47,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 
                 alert("Board Updated Successfully!");
 
-                // Disable the button after click
+                // Disable the buttons after click
                 button.disabled = true;
                 button.style.backgroundColor = "gray";
                 button.style.cursor = "not-allowed";
@@ -60,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     } else {
-        console.log("Error: taskCounter, totalTasks, activity log container, or btn-task elements not found!");
+        console.log("Error!");
     }
     
 });

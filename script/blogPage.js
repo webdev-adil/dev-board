@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (discoverCard) {
         discoverCard.addEventListener("click", function () {
-            // Open the new page
-            window.location.href = "blog.html"; // Change this to your actual page
+            
+            window.location.href = "blog.html"; 
         });
     } else {
         console.log("Error: Discover card element not found!");

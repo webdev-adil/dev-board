@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Activity log cleared successfully!");
         });
     } else {
-        console.log("Error: Clear History button or activity log container not found!");
+        console.log("Error!");
     }
 });
