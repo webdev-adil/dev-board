@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
     </style>
     <title>Blog</title>
 </head>
+
 <body class="bg-gray-100 poppins-font px-[140px] mx-auto">
 
     <nav class="max-w-[1536px] flex justify-between items-center p-4 bg-white shadow-md rounded-lg mt-4">
@@ -25,51 +27,92 @@
             <h1 class="text-xl font-semibold">Dev<span class="font-bold">Board</span></h1>
         </div>
         <div class="btn-desk">
-            <button id="btn-return" class="bg-blue-600 text-white px-4 py-2 rounded-lg cursor-pointer">Back to Desk</button>
+            <button id="btn-return" class="bg-blue-600 text-white px-4 py-2 rounded-lg cursor-pointer">Back to
+                Desk</button>
         </div>
     </nav>
-    
+
     <main class="max-w-[1536px] mt-[40px]">
 
+        <div class="flex justify-center">
+            <h2 class="text-2xl font-bold">Blogs</h2>
+        </div>
+
         <div class="px-12 py-8 bg-white shadow-lg rounded-lg border border-gray-200 w-full mt-[20px]">
-            <h2 class="text-lg font-semibold mt-3">Question-1: What are the different ways to select an element in the DOM?</h2>
+            <h2 class="text-lg font-semibold mt-3">Question-1: What are the different ways to select an element in the
+                DOM?</h2>
             <div class="border-dashed border-t-2 border-gray-300 my-4"></div>
             <div class="">
-                <h2 class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium quod voluptas nulla maxime laboriosam reprehenderit beatae pariatur veniam cum corporis eum facere expedita, modi, doloribus at dicta accusamus error dolorem, a similique culpa. Ipsa in deserunt facilis excepturi sequi rerum nam illum placeat suscipit numquam. Itaque, nisi. Porro minus ab delectus, amet provident iusto fuga vitae! Officiis alias accusantium ullam illo quisquam veniam, exercitationem illum ipsum sit dolor ab, eum dolore itaque doloribus pariatur ea esse quibusdam excepturi at aut voluptatum iure? Aut, minus aliquid. Laborum quasi aspernatur mollitia perferendis adipisci dolor culpa. Rem harum placeat sequi inventore quo?</h2>
+                <p class="mt-3">There are several ways to select an element in DOM. The choice of methods depend on the
+                    specific need and type of codes. Some of the most used methods are:</p>
+                <div class="ml-5">
+                    <ol class="list-decimal ml-5">
+                        <li>getElementByID()</li>
+                        <li>getElementsByClassName()</li>
+                        <li>getElementsByTagName()</li>
+                        <li>querySelector()</li>
+                    </ol>
+                </div>
             </div>
         </div>
         <div class="px-12 py-8 bg-white shadow-lg rounded-lg border border-gray-200 w-full mt-[20px]">
-            <h2 class="text-lg font-semibold mt-3">Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
+            <h2 class="text-lg font-semibold mt-3">Question-2: What is the difference between innerHTML, innerText, and
+                textContent?</h2>
             <div class="border-dashed border-t-2 border-gray-300 my-4"></div>
             <div class="">
-                <h2 class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium quod voluptas nulla maxime laboriosam reprehenderit beatae pariatur veniam cum corporis eum facere expedita, modi, doloribus at dicta accusamus error dolorem, a similique culpa. Ipsa in deserunt facilis excepturi sequi rerum nam illum placeat suscipit numquam. Itaque, nisi. Porro minus ab delectus, amet provident iusto fuga vitae! Officiis alias accusantium ullam illo quisquam veniam, exercitationem illum ipsum sit dolor ab, eum dolore itaque doloribus pariatur ea esse quibusdam excepturi at aut voluptatum iure? Aut, minus aliquid. Laborum quasi aspernatur mollitia perferendis adipisci dolor culpa. Rem harum placeat sequi inventore quo?</h2>
+                <p class="mt-3">
+                    InnerHTML, innerText, and textContent are three properties used in Javascript to manipulate and
+                    extract text or HTML content inside an element. Nevertheless, these three properties work
+                    differently and serve different purposes.
+                </p>
+                <p>
+                    innerHTML is used when the user needs to insert or extract any HTML content of an element. innerText
+                    is used when the user needs to extract the visible texts inside an element and ignore the hidden
+                    texts. Lastly, textContent is used to extract both visible and hidden texts inside an element.
+                </p>
             </div>
         </div>
         <div class="px-12 py-8 bg-white shadow-lg rounded-lg border border-gray-200 w-full mt-[20px]">
             <h2 class="text-lg font-semibold mt-3">Question-3: What is event delegation in the DOM?</h2>
             <div class="border-dashed border-t-2 border-gray-300 my-4"></div>
             <div class="">
-                <h2 class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium quod voluptas nulla maxime laboriosam reprehenderit beatae pariatur veniam cum corporis eum facere expedita, modi, doloribus at dicta accusamus error dolorem, a similique culpa. Ipsa in deserunt facilis excepturi sequi rerum nam illum placeat suscipit numquam. Itaque, nisi. Porro minus ab delectus, amet provident iusto fuga vitae! Officiis alias accusantium ullam illo quisquam veniam, exercitationem illum ipsum sit dolor ab, eum dolore itaque doloribus pariatur ea esse quibusdam excepturi at aut voluptatum iure? Aut, minus aliquid. Laborum quasi aspernatur mollitia perferendis adipisci dolor culpa. Rem harum placeat sequi inventore quo?</h2>
+                <h2 class="mt-3">Event delegation in DOM is a strategy in Javascript to attach an event listener to a
+                    parent element instead of attaching multiple event listeners to child elements. It works with a top
+                    to bottom approach where all the child elements get the property of event listener from the parent.
+                    Additionally, the elements added dynamically also get the property of the event listener from the
+                    parent element. As a result, the codes become more efficient and use less space and memory.</h2>
             </div>
         </div>
         <div class="px-12 py-8 bg-white shadow-lg rounded-lg border border-gray-200 w-full mt-[20px]">
             <h2 class="text-lg font-semibold mt-3">Question-4: What is event bubbling in the DOM?</h2>
             <div class="border-dashed border-t-2 border-gray-300 my-4"></div>
             <div class="">
-                <h2 class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium quod voluptas nulla maxime laboriosam reprehenderit beatae pariatur veniam cum corporis eum facere expedita, modi, doloribus at dicta accusamus error dolorem, a similique culpa. Ipsa in deserunt facilis excepturi sequi rerum nam illum placeat suscipit numquam. Itaque, nisi. Porro minus ab delectus, amet provident iusto fuga vitae! Officiis alias accusantium ullam illo quisquam veniam, exercitationem illum ipsum sit dolor ab, eum dolore itaque doloribus pariatur ea esse quibusdam excepturi at aut voluptatum iure? Aut, minus aliquid. Laborum quasi aspernatur mollitia perferendis adipisci dolor culpa. Rem harum placeat sequi inventore quo?</h2>
+                <p>Event bubbling is a concept in Javascript, where an event starts at a target element. Later, it
+                    propagates upwards through the ancestor elements one by one and ends up in the root element or top
+                    most element in the chain.</p>
             </div>
         </div>
         <div class="px-12 py-8 bg-white shadow-lg rounded-lg border border-gray-200 w-full mt-[20px] mb-[50px]">
-            <h2 class="text-lg font-semibold mt-3">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+            <h2 class="text-lg font-semibold mt-3">Question-5: How do you create, add, and remove elements using
+                JavaScript?</h2>
             <div class="border-dashed border-t-2 border-gray-300 my-4"></div>
             <div class="">
-                <h2 class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium quod voluptas nulla maxime laboriosam reprehenderit beatae pariatur veniam cum corporis eum facere expedita, modi, doloribus at dicta accusamus error dolorem, a similique culpa. Ipsa in deserunt facilis excepturi sequi rerum nam illum placeat suscipit numquam. Itaque, nisi. Porro minus ab delectus, amet provident iusto fuga vitae! Officiis alias accusantium ullam illo quisquam veniam, exercitationem illum ipsum sit dolor ab, eum dolore itaque doloribus pariatur ea esse quibusdam excepturi at aut voluptatum iure? Aut, minus aliquid. Laborum quasi aspernatur mollitia perferendis adipisci dolor culpa. Rem harum placeat sequi inventore quo?</h2>
+                <p>In Javascript, there are specific functions for creating, adding, and removing elements. These are
+                    discussed below:</p>
+                <p class="ml-5">
+                    1. Creating an element: document.createElement() is used to create an HTML element. <br>
+                    2. appendChild(), append(), prepend(), insertBefore(), etc. functions are used to insert elements
+                    into the DOM. <br>
+                    3. remove() and removeChild() functions are used to remove elements.
+                </p>
             </div>
+
         </div>
 
     </main>
-<script src="./script/backToDesk.js">
-</script>
+    <script src="./script/backToDesk.js">
+    </script>
 
 </body>
+
 </html>
